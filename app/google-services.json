@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575803215768",
+    "project_id": "auth-1356f",
+    "storage_bucket": "auth-1356f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575803215768:android:83c4355aaa0b10c4ee65ed",
+        "android_client_info": {
+          "package_name": "com.example.finalex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575803215768-pbhclh1mt4ue81toau6pv4q5ejaaksbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa5fsrE_V2CmIpJj4Q29ETGATlLGDoVRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575803215768-pbhclh1mt4ue81toau6pv4q5ejaaksbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

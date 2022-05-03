@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Application">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="138dp"
+        android:text="PLEASE TOUCH ONE!"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/id_red_face"
+        android:layout_width="127dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="142dp"
+        android:contentDescription="null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/matcuoi_do" />
+
+    <ImageButton
+        android:id="@+id/id_yellow_face"
+        android:layout_width="125dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/id_red_face"
+        app:layout_constraintTop_toBottomOf="@+id/id_red_face"
+        app:srcCompat="@drawable/matcuoi_vang" />
+
+    <ImageButton
+        android:id="@+id/id_green_face"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="279dp"
+        android:contentDescription="null"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_red_face"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/matcuoi_xanh" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#EF77B0"
+        android:text="SignOut"
+        android:textStyle="bold"
+        app:cornerRadius="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/id_yellow_face"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/id_tv_wellcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
