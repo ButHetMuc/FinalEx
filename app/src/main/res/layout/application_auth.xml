@@ -22,11 +22,12 @@
 
     <ImageButton
         android:id="@+id/id_red_face"
-        android:layout_width="127dp"
-        android:layout_height="124dp"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
         android:layout_marginStart="142dp"
         android:layout_marginTop="47dp"
         android:layout_marginEnd="142dp"
+        android:background="@color/white"
         android:contentDescription="null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -36,23 +37,25 @@
 
     <ImageButton
         android:id="@+id/id_yellow_face"
-        android:layout_width="125dp"
-        android:layout_height="117dp"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
+        android:background="@color/white"
         android:contentDescription="null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="@+id/id_red_face"
         app:layout_constraintTop_toBottomOf="@+id/id_red_face"
         app:srcCompat="@drawable/matcuoi_vang" />
 
     <ImageButton
         android:id="@+id/id_green_face"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
+        android:layout_width="98dp"
+        android:layout_height="65dp"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="279dp"
+        android:background="@color/white"
         android:contentDescription="null"
         app:layout_constraintBottom_toTopOf="@+id/view4"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,4 +102,59 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_delete"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="92dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_update"
+        app:layout_constraintTop_toBottomOf="@+id/id_green_face"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <EditText
+        android:id="@+id/id_name_appli"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_green_face"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/id_email_appli"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Email "
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update"
+        app:layout_constraintEnd_toEndOf="@+id/id_name_appli"
+        app:layout_constraintStart_toStartOf="@+id/id_name_appli"
+        app:layout_constraintTop_toBottomOf="@+id/id_name_appli" />
 </androidx.constraintlayout.widget.ConstraintLayout>
